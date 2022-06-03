@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complate Website with Bootstrap</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- bootstrap Link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3a" crossorigin="anonymous">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/Traworld.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <!-- logo -->
+    <!-- <div class="logo1">
+        <img src="Travel_C-removebg-preview.png">
+    </div> -->
+    
+    <a href="#" class="logo">
+        <span>T</span>raWorld</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#gallery">gallery</a>
+        <!-- <a href="#review">review</a> -->
+         <a href="#book">book</a>
+        <a href="#contact">contact</a>
+    </nav>
+    
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="/login" method="post">
+        <h3>login</h3>
+        <input type="email" name="id" class="box" placeholder="enter your email">
+        <input type="password" name="pass" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have and account? <a href="#">register now</a></p>
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Travel Brings power and Love Back into Your Life</h3>
+        <p>Ready For Any Adeventure</p>
+        <a href="#" class="btn">discover more</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn" data-src="Video\production ID_4611893.mp4"></span>
+        <span class="vid-btn" data-src="Video\video (1).mp4"></span>
+        <span class="vid-btn" data-src="Video\Outside View Of An Airplane Wing.mp4"></span>
+        <span class="vid-btn   active" data-src="Video\video.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="Video\video.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+<!-- packages section starts  -->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box"> 
+            <img src="IMG\India.jpg" alt="">
+            <div class="content">
+                <h3> <a href="https://goo.gl/maps/bNe5mtB7edQx11BAA/" target="_blank"><i class="fas fa-map-marker-alt"></i></a> India </h3>
+                <p>Visit This Most Beautiful place and Know About Diffrent Cluture Activities in the World Each and every 28 states and 7 union territories of India.Click the Location button</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 35000₹ <span>37000₹</span> </div>
+                <a href="https://www.britannica.com/place/India" class="btn" target="_blank">View More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="IMG\Dubai.jpg" alt="">
+            <div class="content">
+                <h3>  <a  href="https://goo.gl/maps/QSv1ugK1vxmPz96C6/" target="_blank"><i class="fas fa-map-marker-alt"></i></a> Dubai </h3>
+                <p>Dubai is a city and Emirates in the United Arab Emirates And Burj Khalifa 830m-tall tower, dominates the skyscraper-filled skyline and More.Click the location button</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 60000₹ <span>61500₹</span> </div>
+                <a href="https://www.britannica.com/place/Dubai-United-Arab-Emirates" class="btn" target="_blank">View More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="IMG\HongKong.jpg" alt="">
+            <div class="content">
+                <h3> <a  href="https://goo.gl/maps/NmsPodDBPHVjvNaZ8/" target="_blank"> <i class="fas fa-map-marker-alt"></i></a> Honkong </h3>
+                <p>HongKong is the Place of China.It is The Famous for Buddha temple And See The DisneyLand Most International Human Are Travel To HongKong.Click The location Button</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 52000₹ <span>52500₹</span> </div>
+                <a href="https://www.britannica.com/place/Hong-Kong" class="btn" target="_blank">View More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="IMG\paris.jpg" alt="">
+            <div class="content">
+                <h3> <a  href="https://goo.gl/maps/n9KeasrxzGg4teho6/" target="_blank"> <i class="fas fa-map-marker-alt"></i></a> paris </h3>
+                <p>Paris is The Most Colded Place In The World And Afil-Tower IS Most Attraction Of the Paris in The World Visit The  Most Beautiful Places.Click The Loaction button.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 78000₹ <span>80000₹</span> </div>
+                <a href="https://www.britannica.com/place/Paris" class="btn" target="_blank">View More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="IMG\tokyo.jpg" alt="">
+            <div class="content">
+                <h3> <a  href="https://goo.gl/maps/Acufi34qVRgvjBu37" target="_blank"><i class="fas fa-map-marker-alt"></i></a> tokyo </h3>
+                <p>Tokyo City is Of The Japan And Enjoy Nature And Arts.It is Know About Technologies And Visit The Most Intersting Place SkyTree.Click The Loaction Button</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 66500₹ <span>68000₹</span> </div>
+                <a href="https://www.britannica.com/place/Tokyo" class="btn" target="_blank">View More</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="IMG\Egypt.jpg" alt="">
+            <div class="content">
+                <h3> <a  href="https://goo.gl/maps/snnSaeccSrkt2tH6A" target="_blank"> <i class="fas fa-map-marker-alt"></i></a> eypt </h3>
+                <p>Egypt is city of The Africa.It Is Famous For Pyramids of Giza,in Pyramids And More Historical Place.Click The Location Button</p>
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 58000₹ <span>60000₹</span> </div>
+                <a href="https://www.britannica.com/place/Egypt" class="btn" target="_blank">View More</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- packages section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Cheapest hotels</h3>
+            <p>We Will Provide Affordable Means cheapest Hotels And More facilities Are Also.No Booking Fees And Any Charge.Swimming Pool,Villa,Nature It is The Need For choice.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>foods</h3>
+            <p>In The Hotels Provide Fresh food With Startus.And Fresh Fruites,Vegetables Are Use.If There Avilable </p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Travel guide</h3>
+            <p>Hotels Are Provide travel guide Beacuse Make copies of important documents,Keep your friends and family updated,Be wary of public Wi-Fi,As Your Choice It is Not Important.</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-bus-simple"></i>
+            <h3>Bus And Taxy</h3>
+            <p>Hotels Are Provide Free Bus And Taxy visit The places And The Vehicle Will Provide According To Your family. </p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>fastest travel</h3>
+            <p>We Will Privide fastest Travel Service,safty And The supersonic Concorde aircraft used to be the quickest way to travel In The World And In Travel Foods and Drinks Are Provide </p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>Adventures</h3>
+            <p>Hotels Are Provide In Mountain Area To Enjoy Adventures And Fun,Treking And climbing are Also Provide.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="IMG\1.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>If you have taken photos, then post it here And Your photos will be Share on our website.</p>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqSvjPCTmLmtssGPKPGNNhlRxdbxVQHbFRDcFjFXSWcsmmgJndkvfTbQjNqkCSTjNFRHQB" target="_blank" class="btn"> Shere Photos</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="IMG\2.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>If you have taken photos, then post it here And Your photos will be Share on our website.</p>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqSvjPCTmLmtssGPKPGNNhlRxdbxVQHbFRDcFjFXSWcsmmgJndkvfTbQjNqkCSTjNFRHQB" target="_blank" class="btn">Shere Photos</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="IMG\3.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>If you have taken photos, then post it here And Your photos will be Share on our website.</p>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqSvjPCTmLmtssGPKPGNNhlRxdbxVQHbFRDcFjFXSWcsmmgJndkvfTbQjNqkCSTjNFRHQB" target="_blank" class="btn">Shere Photos</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="IMG\4.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>If you have taken photos, then post it here And Your photos will be Share on our website.</p>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqSvjPCTmLmtssGPKPGNNhlRxdbxVQHbFRDcFjFXSWcsmmgJndkvfTbQjNqkCSTjNFRHQB" target="_blank" class="btn">Shere Photos</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="IMG\5.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>If you have taken photos, then post it here And Your photos will be Share on our website.</p>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqSvjPCTmLmtssGPKPGNNhlRxdbxVQHbFRDcFjFXSWcsmmgJndkvfTbQjNqkCSTjNFRHQB" target="_blank" class="btn">Shere Photos</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="IMG\6.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>If you have taken photos, then post it here And Your photos will be Share on our website.</p>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqSvjPCTmLmtssGPKPGNNhlRxdbxVQHbFRDcFjFXSWcsmmgJndkvfTbQjNqkCSTjNFRHQB" target="_blank" class="btn">Shere Photos</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="IMG\7.jpg" alt=""> 
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>If you have taken photos, then post it here And Your photos will be Share on our website.</p>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqSvjPCTmLmtssGPKPGNNhlRxdbxVQHbFRDcFjFXSWcsmmgJndkvfTbQjNqkCSTjNFRHQB" target="_blank" class="btn">Shere Photos</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="IMG\8.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>If you have taken photos, then post it here And Your photos will be Share on our website.</p>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqSvjPCTmLmtssGPKPGNNhlRxdbxVQHbFRDcFjFXSWcsmmgJndkvfTbQjNqkCSTjNFRHQB" target="_blank" class="btn">Shere Photos</a>
+            </div>
+        </div>
+        <!-- <div class="box">
+            <img src="images/g-9.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div> -->
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- book section starts  -->
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="IMG\Travel_C-removebg-preview.png" alt="">
+        </div>
+
+        <form method="post" action="/form">
+            <div class="inputBox">
+                <h3>Where Do You Want to Go?</h3>
+                <input type="text" name="Name" placeholder="place name">
+            </div>
+            <div class="inputBox">
+                <h3>how many Person Are Travel?</h3>
+                <input type="number" name="Number" placeholder="number of guests">
+            </div>
+            <div class="inputBox">
+                <h3>arrival</h3>
+                <input type="datee" name="Datee" placeholder="Enter The Arrival date">
+            </div>
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date1" Name="date1" placeholder="Enter The Leaving date">
+            </div>
+            <input type="submit" class="btn" value="book now">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- book section ends -->
+
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="IMG/contact-us.jpg" alt="">
+        </div>
+
+        <form method="post" action="/contact">
+            <div class="inputBox">
+                <input type="text" name="Name" placeholder="name">
+                <input type="email" name="Email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="numberr" name="Number" placeholder="phone number">
+                <input type="text" name="Subject" placeholder="subject">
+            </div>
+            <textarea placeholder="message" name="msg" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+
+    </div>
+    
+</section>
+
+<!-- contact section ends -->
+
+<!-- brand section  -->
+<!-- <section class="brand-container">
+
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+        </div>
+    </div>
+
+</section> -->
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>This is A Fully Responsive Website Created By Vishal,Sujal,Dhruv,Darshan And This is The Owner Of Traworld Agency.</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="https://goo.gl/maps/JdE5uez75qJoM44u5" target="_blank">india</a>
+            <a href="https://goo.gl/maps/ysDyVSESUpC73FXaA" target="_blank">Mumbai</a>
+            <a href="https://goo.gl/maps/k8fjkwzwubwHnKqr5" target="_blank">New Delhi</a>
+            <a href="https://goo.gl/maps/rEEjwDHCkX71gyGX7" target="_blank">Deheradun</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">book</a>
+            <a href="#">packages</a>
+            <a href="#">services</a>
+            <a href="#">gallery</a>
+            <a href="#">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com" target="_blank">facebook</a>
+            <a href="https://www.instagram.com" target="_blank">instagram</a>
+            <a href="https://www.twitter.com" target="_blank">twitter</a>
+            <a href="https://in.linkedin.com/" target="_blank">linkedin</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> © Copyright 2022<span> Traworld Agency</span></h1>
+
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="/Traworld.js"></script>
+
+</body>
+</html>
